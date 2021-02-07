@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4BF216D86B58DBC35CF4FA /* Pods_RickMortyy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41F5F0B6CE97F89BE36678C /* Pods_RickMortyy.framework */; };
+		B9D32CD025CF1BD9005BEFBE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D32CCF25CF1BD9005BEFBE /* User.swift */; };
+		B9D32CD325CF1BED005BEFBE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D32CD225CF1BED005BEFBE /* Parser.swift */; };
+		B9D32CD625CF1DD2005BEFBE /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D32CD525CF1DD2005BEFBE /* DetailsVC.swift */; };
 		B9E2A23A25CF01DB00F58A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E2A23925CF01DB00F58A44 /* AppDelegate.swift */; };
 		B9E2A23C25CF01DB00F58A44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E2A23B25CF01DB00F58A44 /* SceneDelegate.swift */; };
 		B9E2A23E25CF01DB00F58A44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E2A23D25CF01DB00F58A44 /* ViewController.swift */; };
 		B9E2A24125CF01DB00F58A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9E2A23F25CF01DB00F58A44 /* Main.storyboard */; };
 		B9E2A24325CF01DD00F58A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9E2A24225CF01DD00F58A44 /* Assets.xcassets */; };
 		B9E2A24625CF01DD00F58A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9E2A24425CF01DD00F58A44 /* LaunchScreen.storyboard */; };
+		B9E2A24F25CF03A900F58A44 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E2A24E25CF03A900F58A44 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D5C67B25844837377FC8C0C /* Pods-RickMortyy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyy.debug.xcconfig"; path = "Target Support Files/Pods-RickMortyy/Pods-RickMortyy.debug.xcconfig"; sourceTree = "<group>"; };
+		B9D32CCF25CF1BD9005BEFBE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B9D32CD225CF1BED005BEFBE /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		B9D32CD525CF1DD2005BEFBE /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		B9E2A23625CF01DB00F58A44 /* RickMortyy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickMortyy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E2A23925CF01DB00F58A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9E2A23B25CF01DB00F58A44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		B9E2A24225CF01DD00F58A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9E2A24525CF01DD00F58A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9E2A24725CF01DD00F58A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9E2A24E25CF03A900F58A44 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		CA633454D7A3706860A24105 /* Pods-RickMortyy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyy.release.xcconfig"; path = "Target Support Files/Pods-RickMortyy/Pods-RickMortyy.release.xcconfig"; sourceTree = "<group>"; };
+		F41F5F0B6CE97F89BE36678C /* Pods_RickMortyy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMortyy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4BF216D86B58DBC35CF4FA /* Pods_RickMortyy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200E42309776B5B93CE2984B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F41F5F0B6CE97F89BE36678C /* Pods_RickMortyy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F0818A307D6F1C86D8C90C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D5C67B25844837377FC8C0C /* Pods-RickMortyy.debug.xcconfig */,
+				CA633454D7A3706860A24105 /* Pods-RickMortyy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9D32CDD25CF4B1C005BEFBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9D32CCF25CF1BD9005BEFBE /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9D32CDE25CF4B36005BEFBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9E2A23D25CF01DB00F58A44 /* ViewController.swift */,
+				B9D32CD525CF1DD2005BEFBE /* DetailsVC.swift */,
+				B9E2A24E25CF03A900F58A44 /* FeedCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9D32CDF25CF4B56005BEFBE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B9D32CD225CF1BED005BEFBE /* Parser.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		B9E2A22D25CF01DB00F58A44 = {
 			isa = PBXGroup;
 			children = (
 				B9E2A23825CF01DB00F58A44 /* RickMortyy */,
 				B9E2A23725CF01DB00F58A44 /* Products */,
+				4F0818A307D6F1C86D8C90C5 /* Pods */,
+				200E42309776B5B93CE2984B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +114,11 @@
 		B9E2A23825CF01DB00F58A44 /* RickMortyy */ = {
 			isa = PBXGroup;
 			children = (
+				B9D32CDF25CF4B56005BEFBE /* Network */,
+				B9D32CDE25CF4B36005BEFBE /* Controller */,
+				B9D32CDD25CF4B1C005BEFBE /* Model */,
 				B9E2A23925CF01DB00F58A44 /* AppDelegate.swift */,
 				B9E2A23B25CF01DB00F58A44 /* SceneDelegate.swift */,
-				B9E2A23D25CF01DB00F58A44 /* ViewController.swift */,
 				B9E2A23F25CF01DB00F58A44 /* Main.storyboard */,
 				B9E2A24225CF01DD00F58A44 /* Assets.xcassets */,
 				B9E2A24425CF01DD00F58A44 /* LaunchScreen.storyboard */,
@@ -74,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9E2A24A25CF01DD00F58A44 /* Build configuration list for PBXNativeTarget "RickMortyy" */;
 			buildPhases = (
+				EB44C5EC0F744E19181FE2B0 /* [CP] Check Pods Manifest.lock */,
 				B9E2A23225CF01DB00F58A44 /* Sources */,
 				B9E2A23325CF01DB00F58A44 /* Frameworks */,
 				B9E2A23425CF01DB00F58A44 /* Resources */,
+				5799792BE9F266F4EBB7CF89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +194,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5799792BE9F266F4EBB7CF89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickMortyy/Pods-RickMortyy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickMortyy/Pods-RickMortyy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickMortyy/Pods-RickMortyy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB44C5EC0F744E19181FE2B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickMortyy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9E2A23225CF01DB00F58A44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B9E2A23E25CF01DB00F58A44 /* ViewController.swift in Sources */,
+				B9E2A24F25CF03A900F58A44 /* FeedCell.swift in Sources */,
+				B9D32CD325CF1BED005BEFBE /* Parser.swift in Sources */,
 				B9E2A23A25CF01DB00F58A44 /* AppDelegate.swift in Sources */,
+				B9D32CD625CF1DD2005BEFBE /* DetailsVC.swift in Sources */,
+				B9D32CD025CF1BD9005BEFBE /* User.swift in Sources */,
 				B9E2A23C25CF01DB00F58A44 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +391,7 @@
 		};
 		B9E2A24B25CF01DD00F58A44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5C67B25844837377FC8C0C /* Pods-RickMortyy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +411,7 @@
 		};
 		B9E2A24C25CF01DD00F58A44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA633454D7A3706860A24105 /* Pods-RickMortyy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

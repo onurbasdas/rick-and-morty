@@ -14,3 +14,4 @@ Once you have CocoaPods installed you will need to run pod install.
 $ pod install
 ```
 
+- [Rick&Morty Api](https://rickandmortyapi.com/api)

@@ -1,6 +1,9 @@
-# rick-and-morty-clone
+# rick-and-morty
 
-Setup
+You can contribute to my project by using the following rick and morty project that I watched fondly.
+
+
+### Setup
 
 The project uses 
 - [Cocoapods](https://cocoapods.org/) as a dependency manager.

@@ -22,12 +22,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     
-//    var chosenNames = ""
-//    var chosenGender = ""
-//    var choosenStatus = ""
-//    var choosenImage = UIImage()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = .black
@@ -45,7 +39,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return results.count
-        //        return results.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,19 +48,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let character = results[indexPath.row]
         cell.setUpWith(characterModel: character)
         return cell
-        //        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
-        //        cell.characterNameLabel.text = results[indexPath.row].name
-        //        cell.characterImageView.sd_setImage(with: URL(string: results[indexPath.row].image))
-        //        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toDetailsVC", sender: self)
-        //        let selected = results[indexPath.row]
-        //        chosenNames = selected.name
-        //        chosenGender = selected.gender
-        //        choosenStatus = selected.status
-        //        self.performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -81,14 +65,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 }
 
-
-//        if segue.identifier == "toDetailsVC"{
-//
-//            let destinationVC = segue.destination as! DetailsVC
-//            destinationVC.selectedName = chosenNames
-//            destinationVC.selectedGender = chosenGender
-//            destinationVC.selectedStatus = choosenStatus
-//            destinationVC.selectedImage = choosenImage
-//
-//        }
 

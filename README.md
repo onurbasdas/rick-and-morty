@@ -6,7 +6,8 @@ You can contribute to my project by using the following rick and morty project t
 ### Setup
 
 The project uses 
-- [Cocoapods](https://cocoapods.org/) as a dependency manager.
+- [Cocoapods](https://cocoapods.org/)
+- [Rick&Morty Api](https://rickandmortyapi.com/api)
 
 Once you have CocoaPods installed you will need to run pod install.
 
@@ -14,4 +15,4 @@ Once you have CocoaPods installed you will need to run pod install.
 $ pod install
 ```
 
-- [Rick&Morty Api](https://rickandmortyapi.com/api)
+
